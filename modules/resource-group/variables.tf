@@ -1,11 +1,16 @@
-variable "name" {
+variable "resource_prefix" {
+  type    = string
+  default = "rg"
+}
+
+variable "resource_suffix" {
+  type    = string
+  default = "001"
+}
+
+variable "resource_group_name" {
   type        = string
   description = "Name of the resource group."
-
-  validation {
-    condition     = length(var.name) >= 1 && length(var.name) <= 90
-    error_message = "Resource group name must be between 1 and 90 characters."
-  }
 }
 
 variable "location" {
