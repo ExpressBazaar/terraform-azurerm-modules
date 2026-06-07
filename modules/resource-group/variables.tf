@@ -1,14 +1,4 @@
-variable "resource_prefix" {
-  type    = string
-  default = "rg"
-}
-
-variable "resource_suffix" {
-  type    = string
-  default = "001"
-}
-
-variable "resource_group_name" {
+variable "name" {
   type        = string
   description = "Name of the resource group."
 }
