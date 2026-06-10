@@ -32,7 +32,7 @@ variable "account_tier" {
 variable "account_replication_type" {
   type        = string
   description = "Replication strategy (LRS, GRS, RAGRS, ZRS, GZRS, RAGZRS)."
-  default     = "ZRS"
+  default     = "LRS"
 
   validation {
     condition     = contains(["LRS", "GRS", "RAGRS", "ZRS", "GZRS", "RAGZRS"], var.account_replication_type)
