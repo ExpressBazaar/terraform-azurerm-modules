@@ -33,11 +33,6 @@ variable "account_replication_type" {
   type        = string
   description = "Replication strategy (LRS, GRS, RAGRS, ZRS, GZRS, RAGZRS)."
   default     = "LRS"
-
-  validation {
-    condition     = contains(["LRS", "GRS", "RAGRS", "ZRS", "GZRS", "RAGZRS"], var.account_replication_type)
-    error_message = "Invalid replication type."
-  }
 }
 
 variable "account_kind" {
