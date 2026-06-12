@@ -27,11 +27,6 @@ variable "sku_name" {
   type        = string
   description = "SKU of the Key Vault."
   default     = "standard"
-
-  validation {
-    condition     = contains(["standard", "premium"], var.sku_name)
-    error_message = "sku_name must be either 'standard' or 'premium'."
-  }
 }
 
 variable "enable_rbac_authorization" {
@@ -43,13 +38,13 @@ variable "enable_rbac_authorization" {
 variable "purge_protection_enabled" {
   type        = bool
   description = "Enable purge protection. Strongly recommended for production."
-  default     = true
+  default     = false
 }
 
 variable "soft_delete_retention_days" {
   type        = number
   description = "Days that soft-deleted items are retained (7-90)."
-  default     = 90
+  default     = 7
 
   validation {
     condition     = var.soft_delete_retention_days >= 7 && var.soft_delete_retention_days <= 90
