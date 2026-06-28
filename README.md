@@ -37,6 +37,7 @@ A versioned library of reusable, composable Terraform modules for Microsoft Azur
 |-------------------------------------------------|--------------------------------------|
 | [aks](./modules/aks)                            | AKS cluster (CNI, autoscale, OMS)    |
 | [app-service](./modules/app-service)            | Linux Web App + plan + VNet integ.   |
+| [linux-vm](./modules/linux-vm)                  | Linux VM with NIC, optional public IP, and SSH auth |
 | [sql](./modules/sql)                            | SQL server + databases (AAD admin)   |
 | [container-registry](./modules/container-registry) | Azure Container Registry          |
 
