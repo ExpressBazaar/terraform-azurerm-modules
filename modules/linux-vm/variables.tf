@@ -16,7 +16,7 @@ variable "location" {
 variable "size" {
   type        = string
   description = "Size of the virtual machine (for example Standard_B2s)."
-  default     = "Standard_B2sStandard_D4s_v5"
+  default     = "Standard_D4s_v5"
 }
 
 variable "admin_username" {
