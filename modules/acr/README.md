@@ -5,7 +5,7 @@ Creates an Azure Container Registry. Defaults to Premium with public access disa
 ## Usage
 
 module "acr" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/container-registry?ref=v1.2.0"
+  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/acr?ref=v1.2.0"
   name                = "acrappprod001"
   resource_group_name = module.rg.name
   location            = module.rg.location
