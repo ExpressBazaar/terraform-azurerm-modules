@@ -6,7 +6,7 @@ Creates an Azure Subnet within an existing VNet. Supports service endpoints and 
 
 ```hcl
 module "subnet_web" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/subnet?ref=v1.0.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/subnet?ref=v1.2.0"
   name                = "snet-web"
   resource_group_name = module.rg.name
   vnet_name           = module.vnet.name

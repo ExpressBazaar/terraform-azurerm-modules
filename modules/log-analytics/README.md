@@ -6,7 +6,7 @@ Creates an Azure Log Analytics workspace with configurable retention, a daily in
 
 ```hcl
 module "log_analytics" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/log-analytics?ref=v1.1.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/log-analytics?ref=v1.2.0"
   name                = "log-app-prod"
   resource_group_name = module.rg.name
   location            = module.rg.location

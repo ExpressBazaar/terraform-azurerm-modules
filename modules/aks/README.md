@@ -6,7 +6,7 @@ Creates an Azure Kubernetes Service cluster with a system-assigned identity, Azu
 
 ```hcl
 module "aks" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/aks?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/aks?ref=v1.2.0"
   name                = "aks-app-prod"
   resource_group_name = module.rg.name
   location            = module.rg.location

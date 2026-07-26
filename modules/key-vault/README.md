@@ -6,7 +6,7 @@ Creates an Azure Key Vault with RBAC authorization, purge protection, and a netw
 
 ```hcl
 module "key_vault" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/key-vault?ref=v1.1.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/key-vault?ref=v1.2.0"
   name                = "kv-app-prod"
   resource_group_name = module.rg.name
   location            = module.rg.location
@@ -39,8 +39,9 @@ module "key_vault" {
 
 ## Outputs
 
-| Name      | Description                       |
-|-----------|-----------------------------------|
-| id        | The ID of the Key Vault           |
-| name      | The name of the Key Vault         |
-| vault_uri | The URI for accessing secrets     |
+| Name         | Description                                        |
+|--------------|----------------------------------------------------|
+| id           | The ID of the Key Vault                            |
+| key_vault_id | Deprecated alias for `id`; kept for compatibility  |
+| name         | The name of the Key Vault                          |
+| vault_uri    | The URI for accessing secrets                      |

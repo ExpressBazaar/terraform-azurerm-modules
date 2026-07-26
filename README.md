@@ -45,7 +45,7 @@ A versioned library of reusable, composable Terraform modules for Microsoft Azur
 
 ```hcl
 module "rg" {
-  source   = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/resource-group?ref=v1.2.0"
+  source   = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/resource-group?ref=v1.2.0"
   name     = "rg-app-dev"
   location = "uksouth"
 }

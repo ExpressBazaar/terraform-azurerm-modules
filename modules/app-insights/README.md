@@ -6,7 +6,7 @@ Creates an Azure Application Insights instance for application performance monit
 
 ```hcl
 module "app_insights" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/app-insights?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/app-insights?ref=v1.2.0"
   name                = "appi-app-prod-001"
   resource_group_name = module.rg.name
   location            = module.rg.location

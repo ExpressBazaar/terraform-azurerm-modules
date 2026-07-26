@@ -6,7 +6,7 @@ Creates an Azure Storage Account (StorageV2) with secure defaults: TLS 1.2, HTTP
 
 ```hcl
 module "storage" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/storage-account?ref=v1.1.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/storage-account?ref=v1.2.0"
   name                = "stappprod001"
   resource_group_name = module.rg.name
   location            = module.rg.location

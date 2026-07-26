@@ -6,7 +6,7 @@ Creates an Azure SQL logical server and one or more databases. Defaults to publi
 
 ```hcl
 module "sql" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/sql?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/sql?ref=v1.2.0"
   server_name         = "sql-app-prod"
   resource_group_name = module.rg.name
   location            = module.rg.location

@@ -6,7 +6,7 @@ Creates an Azure Route Table with dynamic routes and an optional subnet associat
 
 ```hcl
 module "rt" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/route-table?ref=v1.0.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/route-table?ref=v1.2.0"
   name                = "rt-web"
   resource_group_name = module.rg.name
   location            = module.rg.location

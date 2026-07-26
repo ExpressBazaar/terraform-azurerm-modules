@@ -6,7 +6,7 @@ Creates a Linux App Service Plan and Web App with a system-assigned identity, HT
 
 ```hcl
 module "app" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/app-service?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/app-service?ref=v1.2.0"
   name                = "app-web-prod"
   resource_group_name = module.rg.name
   location            = module.rg.location

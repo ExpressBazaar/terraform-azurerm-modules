@@ -6,7 +6,7 @@ Creates an Azure NSG with dynamic security rules and an optional subnet associat
 
 ```hcl
 module "nsg_web" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/nsg?ref=v1.0.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/nsg?ref=v1.2.0"
   name                = "nsg-web"
   resource_group_name = module.rg.name
   location            = module.rg.location

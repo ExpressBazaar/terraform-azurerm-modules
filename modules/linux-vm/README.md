@@ -6,7 +6,7 @@ Creates a Linux virtual machine in Azure with a NIC, optional public IP, SSH key
 
 ```hcl
 module "linux_vm" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/linux-vm?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/linux-vm?ref=v1.2.0"
   name                = "app-dev-vm"
   resource_group_name = module.rg.name
   location            = module.rg.location

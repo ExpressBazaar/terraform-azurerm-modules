@@ -6,7 +6,7 @@ Creates an Azure Private DNS zone with VNet links and optional A records. Essent
 
 ```hcl
 module "private_dns_kv" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/private-dns-zone?ref=v1.1.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/private-dns-zone?ref=v1.2.0"
   name                = "privatelink.vaultcore.azure.net"
   resource_group_name = module.rg.name
 

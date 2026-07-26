@@ -6,7 +6,7 @@ Creates an Azure user-assigned managed identity. Attach it to compute (AKS, Cont
 
 ```hcl
 module "identity" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/managed-identity?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/managed-identity?ref=v1.2.0"
   name                = "id-app-prod-001"
   resource_group_name = module.rg.name
   location            = module.rg.location

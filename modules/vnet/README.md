@@ -6,7 +6,7 @@ Creates an Azure Virtual Network.
 
 ```hcl
 module "vnet" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/vnet?ref=v1.0.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/vnet?ref=v1.2.0"
   name                = "vnet-app-dev"
   resource_group_name = module.rg.name
   location            = module.rg.location

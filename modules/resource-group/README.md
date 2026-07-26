@@ -6,7 +6,7 @@ Creates an Azure Resource Group.
 
 ```hcl
 module "rg" {
-  source   = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/resource-group?ref=v1.0.0"
+  source   = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/resource-group?ref=v1.2.0"
   name     = "rg-app-dev"
   location = "uksouth"
   tags     = { environment = "dev" }

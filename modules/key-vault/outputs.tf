@@ -1,5 +1,10 @@
+output "id" {
+  description = "The ID of the Azure Key Vault."
+  value       = azurerm_key_vault.this.id
+}
+
 output "key_vault_id" {
-  description = "The ID of the Azure Key Vault"
+  description = "Deprecated alias for `id`; kept for backward compatibility."
   value       = azurerm_key_vault.this.id
 }
 

@@ -6,7 +6,7 @@ Creates an Azure Container App Environment — the secure boundary that hosts on
 
 ```hcl
 module "container_app_env" {
-  source              = "git::https://github.com/yourorg/terraform-azurerm-modules.git//modules/container-app-environment?ref=v1.2.0"
+  source              = "git::https://github.com/ExpressBazaar/terraform-azurerm-modules.git//modules/container-app-environment?ref=v1.2.0"
   name                = "cae-app-prod-001"
   resource_group_name = module.rg.name
   location            = module.rg.location
