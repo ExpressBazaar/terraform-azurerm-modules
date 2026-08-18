@@ -40,6 +40,13 @@ A versioned library of reusable, composable Terraform modules for Microsoft Azur
 | [sql](./modules/sql)                            | SQL server + databases (AAD admin)   |
 | [container-registry](./modules/container-registry) | Azure Container Registry          |
 
+### Phase 4 — Data & AI
+
+| Module                                          | Purpose                              |
+|-------------------------------------------------|--------------------------------------|
+| [databricks-workspace](./modules/databricks-workspace) | Azure Databricks workspace         |
+| [databricks-access-connector](./modules/databricks-access-connector) | Unity Catalog access connector |
+
 ## Consuming a Module
 
 ```hcl
@@ -79,3 +86,4 @@ Bump versions per [SemVer](https://semver.org/): MAJOR for breaking input/output
 | v1.0.0 | Phase 1 network modules                           |
 | v1.1.0 | Phase 2 platform modules                          |
 | v1.2.0 | Phase 3 workload modules                          |
+| v1.3.0 | Phase 4 data & AI modules                         |
