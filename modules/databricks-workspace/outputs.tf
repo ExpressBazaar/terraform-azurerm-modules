@@ -17,3 +17,4 @@ output "managed_resource_group_id" {
   description = "The ID of the managed resource group."
   value       = azurerm_databricks_workspace.this.managed_resource_group_id
 }
+
